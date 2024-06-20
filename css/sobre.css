@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+    height: 220px;
+    margin-left: 20px;
+    overflow: hidden;
+    font-size: 3rem;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 30vh;
+    background-color: #024959;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.titulo {
+    color: #F2E3D5;
+    font-size: 2.8rem;
+    margin: 10px;
+}
+
+.subtitulo {
+    margin: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.box-img {
+    width: 100%;
+    height: 60vh;
+    background-image: url(/imgs/pexels-cottonbro-7579831.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.caixa-texto {
+    background-color: #024959;
+    width: auto;
+    color: #F2E3D5;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #F2E3D5;
+}
+
+.historia {
+    color: #F2E3D5;
+
+}
+
+h3 {
+    text-align: center;
+}
+
+.contato {
+    background-color: #F2E3D5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+    color: #012831;
+    margin: 5px;
+    font-size: 1rem;
+}
+
+a:hover {
+    letter-spacing: 1px;
+    color: darkblue;
+}
+
+footer {
+    text-align: center;
+    font-weight: 600;
+    background-color: #024959;
+    color: #F2E3D5;
+}
