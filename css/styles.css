@@ -1,223 +1,65 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
 
-html {
-    font-family: "Montserrat", sans-serif;
-}
 
-body {
-    background-color: #f2e3d5;
-}
-
-.cabecalho {
+@media (max-width: 900px) {
+  .cabecalho {
+    height: 40vh;
+    flex-direction: column;
+  }
+  .titulo {
+    font-size: 1.8rem;
+  }
+  .sub-titulo {
+    font-size: 1.5rem;
+  }
+  .logo {
+    width: 130px;
+  }
+  .nav-bar {
+    flex-direction: column;
+  }
+  .nav-bar a {
+    font-size: 0.6rem;
+  }
+  .box-article {
     width: 100%;
-    height: 20vh;
-    background-color: #024959;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.titulo {
-    padding: 20px;
-    font-size: 3rem;
-    color: #f2e3d5;
-    margin-left: 5px;
-    text-shadow: 2px 2px #808080 ;
-}
-
-.logo {
-    width: 200px;
-    position: relative;
-    bottom: 1px;
-}
-
-.nav-bar {
-    width: 45vw;
     height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-}
-
-.nav-bar a {
-    text-decoration: none;
-    color: #f2e3d5;
+  }
+  .bem-vindo {
+    margin-top: 10px;
+  }
+  .tit-especialidades {
+    font-size: 1.8rem;
+  }
+  .contato {
+    font-size: 0.8rem;
+  }
+  .redes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
     font-size: 1rem;
-}
-
-.nav-bar a:hover {
-    letter-spacing: 1px;
-    color: #f2e3d5;
-}
-
-.bem-vindo {
-    width: 100%;
-    background-color: #f2e3d5; 
-    text-align: center;
-    padding: 5px;
-    justify-content: center;
-    padding: 30px;
-}
-
-.sub-titulo {
-    color: #024959;
-    margin: 10px;
-    font-size: 3rem;
-    text-shadow: 2px 2px #808080;
-}
-
-
-.intro {
-    color: #024959;
-    padding: 20px;
-    /* animation-duration: 6s;
-    animation-name: slidein; */
-}
-
-@keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
-
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-
-.tit-especialidades {
-    text-align: center;
-    font-size: 3rem;
-    background-color: #024959;
-    padding: 20px;
-    color: #f2e3d5;
-    text-shadow: 2px 2px #808080;
-}
-
-/*.tit-especialidades:hover {
-    letter-spacing: 2px;
-} OU FAZER ISSO PAWRA BEM VINDO TAMBÉM */ 
-
-.box-article {
-    width: 100%;
-    height: auto;
-    display: flex;
-    background-color: #024959;
-    padding: 0px 20px 40px 20px;
-}
-
-.box-especialidades {
-    background-color: #fff;
-    border-radius: 10px;
-   /* box-shadow: 0 0px 8px 2px #f2e3d5; */
     padding: 10px;
-    margin: 10px;
-    width: 300px;
+  }
+  .testimonial-card {
     display: flex;
     flex-direction: column;
+    width: 220px;
     align-items: center;
-    justify-content: top;
-    text-align: center;
-    font-size: 0.95rem;
-}
-
-.box-especialidades img {
-    width: 50%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.box-especialidades h3 {
-    font-size: 1rem;
-    margin: 10px;
-    position: relative;
-    bottom: 5px;
-}
-
-.box-especialidades:hover {
-    font-size: 1rem;
-    box-shadow: 0 0px 10px 4px #808080;
-
-}
-
-/* .box-especialidades h3:hover {
-    letter-spacing: 2px;
-} */
-
-.testimonial-card {
+    justify-content: center;
+  }
+  .contato {
+    font-size: 0.7rem;
     display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 10px;
-    text-align: center;
-    padding: 20px;
-    margin: 10px 200px;
-    border: 2px solid #024959;
-    gap: 8px;
+   
+  }
+ 
+
 }
-
-.tit-dep h2 {
-    text-align: center;
-    padding: 30px 0px 0px 0px;
-    font-size: 3rem;
-    text-shadow: 2px 2px #808080;
-    color: #024959;
-}
-
-.depoimentos {
-    font-style: oblique;
-    font-weight: 600;
-}
-
-.tit-dep2 {
-    text-align: center;
-    text-shadow: 1px 1px #808080;
-    color: #024959;
-}
-
-.contato {
-    margin-top: 40px;
-    background-color: #024959;
-    color: #f2e3d5;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    font-size: 0.9rem;
-    gap: 8px;
-}
-
-a {
-    text-decoration: none;
-    color: #f2e3d5;
-    margin: 5px;
-    font-size: 1rem;
-}
-
-/* a:hover {
-    letter-spacing: 1px;
-    color: darkblue;
-} */
-
-footer {
-    padding: 20px;
-    text-align: center;
-    font-weight: 600;
-    background-color: #024959;
-    color: #f2e3d5;
-    height: 50px;
-    text-align: center;
-}
-
-/* li {
-    list-style-type: none;
-} */
