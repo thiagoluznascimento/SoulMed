@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: #024959;
+    background-color: #f2e3d5;
 }
 
 .cabecalho {
@@ -23,11 +23,11 @@ body {
 }
 
 .titulo {
-    padding: 10px;
+    padding: 20px;
     font-size: 3rem;
     color: #f2e3d5;
     margin-left: 5px;
-    text-shadow: 5px 5px #000000;
+    text-shadow: 2px 2px #808080 ;
 }
 
 .logo {
@@ -53,30 +53,31 @@ body {
 
 .nav-bar a:hover {
     letter-spacing: 1px;
-    color: #012831;
+    color: #f2e3d5;
 }
 
 .bem-vindo {
     width: 100%;
-    background-color: #024959;
+    background-color: #f2e3d5; 
     text-align: center;
     padding: 5px;
-    border: 2px solid #f2e3d5;
-
+    justify-content: center;
+    padding: 30px;
 }
 
 .sub-titulo {
-    color: #f2e3d5;
+    color: #024959;
     margin: 10px;
     font-size: 3rem;
-    text-shadow: 5px 5px #000000;
+    text-shadow: 2px 2px #808080;
 }
 
+
 .intro {
-    color: #f2e3d5;
+    color: #024959;
     padding: 20px;
-    animation-duration: 6s;
-    animation-name: slidein;
+    /* animation-duration: 6s;
+    animation-name: slidein; */
 }
 
 @keyframes slidein {
@@ -95,37 +96,40 @@ body {
     text-align: center;
     font-size: 3rem;
     background-color: #024959;
-    padding: 10px;
+    padding: 20px;
     color: #f2e3d5;
-    text-shadow: 5px 5px #000000;
+    text-shadow: 2px 2px #808080;
 }
 
-.tit-especialidades:hover {
+/*.tit-especialidades:hover {
     letter-spacing: 2px;
-}
+} OU FAZER ISSO PAWRA BEM VINDO TAMBÉM */ 
 
 .box-article {
     width: 100%;
     height: auto;
     display: flex;
+    background-color: #024959;
+    padding: 0px 20px 40px 20px;
 }
 
 .box-especialidades {
-    background-color: #f2e3d5;
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0px 8px 2px #f2e3d5;
+   /* box-shadow: 0 0px 8px 2px #f2e3d5; */
     padding: 10px;
     margin: 10px;
     width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
     text-align: center;
+    font-size: 0.95rem;
 }
 
 .box-especialidades img {
-    width: 80%;
+    width: 50%;
     height: auto;
     margin-bottom: 20px;
 }
@@ -137,24 +141,34 @@ body {
     bottom: 5px;
 }
 
-.box-especialidades h3:hover {
-    letter-spacing: 2px;
+.box-especialidades:hover {
+    font-size: 1rem;
+    box-shadow: 0 0px 10px 4px #808080;
+
 }
+
+/* .box-especialidades h3:hover {
+    letter-spacing: 2px;
+} */
 
 .testimonial-card {
-    background-color: #f2e3d5;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
     border-radius: 10px;
     text-align: center;
-    padding: 10px;
-    margin: 10px;
+    padding: 20px;
+    margin: 10px 200px;
+    border: 2px solid #024959;
+    gap: 8px;
 }
 
-.tit-dep {
+.tit-dep h2 {
     text-align: center;
-    padding: 20px;
-    font-size: 1.5rem;
-    text-shadow: 5px 5px #000000;
-    color: #f2e3d5;
+    padding: 30px 0px 0px 0px;
+    font-size: 3rem;
+    text-shadow: 2px 2px #808080;
+    color: #024959;
 }
 
 .depoimentos {
@@ -164,44 +178,46 @@ body {
 
 .tit-dep2 {
     text-align: center;
-    text-shadow: 5px 5px #000000;
-    color: #f2e3d5;
+    text-shadow: 1px 1px #808080;
+    color: #024959;
 }
 
 .contato {
-    background-color: #f2e3d5;
+    margin-top: 40px;
+    background-color: #024959;
+    color: #f2e3d5;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     height: 100px;
-    width: 99.5%;
+    width: 100%;
     font-size: 0.9rem;
-    margin: 5px;
-
+    gap: 8px;
 }
 
 a {
     text-decoration: none;
-    color: #012831;
+    color: #f2e3d5;
     margin: 5px;
     font-size: 1rem;
 }
 
-a:hover {
+/* a:hover {
     letter-spacing: 1px;
     color: darkblue;
-}
+} */
 
 footer {
+    padding: 20px;
     text-align: center;
     font-weight: 600;
     background-color: #024959;
     color: #f2e3d5;
-    height: 30px;
+    height: 50px;
     text-align: center;
 }
 
-li {
+/* li {
     list-style-type: none;
-}
+} */
