@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Agende suas consultas e entre em contato com a nossa Clínica Médica. Atendimento de qualidade para você e sua família.">
+        <meta name="keywords" content="clínica médica, agendamento de consultas, contato, saúde, bem-estar">
+        <meta name="author" content="SoulMed">
+        <title>Clínica Médica - Agendamento e Contato</title>
+
+        <link rel="stylesheet" href="css/agendamento.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>SoulMed</h1>
+            <p>Agende sua consulta ou entre em contato conosco</p>
+        </header>
+
+        <div class="container">
+
+            <!-- Seção de Agendamento -->
+            <section class="section" id="agendamento">
+                <h2>Agendamento de Consultas</h2>
+                <p>Preencha o formulário abaixo para agendar sua consulta:</p>
+                <form action="#" method="post">
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome aqui">
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required placeholder="seuemail@gmail.com">
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required placeholder="(xx) xxxx-xxxx">
+                    </div>
+                    <div>
+                        <label for="especialidade">Especialidade:</label>
+                        <select name="especialidade" id="especialidade" required>
+                            <option disabled selected value="">Selecione uma opção</option>
+                            <option>Endoscopia Digestiva Alta</option>
+                            <option>Doenças Inflamatórias Intestinais</option>
+                            <option>Colonoscopia</option>
+                            <option>Gastroenterologia Adulto</option>
+                            <option>Retossigmoidoscopia Flexível</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="data">Data de Agendamento:</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+                    <div>
+                        <label for="hora">Horário de Agendamento:</label> <!--Eu não sei como limitar caso esse horário já esteja preenchido-->
+                        <select name="hora" id="hora" required>
+                            <option disabled selected value="">Selecione um horário</option>
+                            <option>08:00</option>
+                            <option>09:00</option>
+                            <option>10:00</option>
+                            <option>11:00</option>
+                            <option>14:00</option>
+                            <option>15:00</option>
+                            <option>16:00</option>
+                            <option>17:00</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Informe algum detalhe adicional (opcional)"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Agendar">
+                    </div>
+                </form>
+            </section>
+
+            <!-- Seção de Contato -->
+            <section class="section" id="contato">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco preenchendo o formulário abaixo:</p>
+                <form action="#" method="post">
+                    <div>
+                        <label for="nome-contato">Nome:</label>
+                        <input type="text" id="nome-contato" name="nome-contato" required>
+                    </div>
+                    <div>
+                        <label for="email-contato">E-mail:</label>
+                        <input type="email" id="email-contato" name="email-contato" required>
+                    </div>
+                    <div>
+                        <label for="mensagem-contato">Mensagem:</label>
+                        <textarea id="mensagem-contato" name="mensagem-contato" rows="5" required></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </section>
+            
+        </div>
+
+        <footer>
+            <p>&copy; 2024 SoulMed. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>
