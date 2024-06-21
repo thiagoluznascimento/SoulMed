@@ -6,6 +6,7 @@
 
 html {
     font-family: "Montserrat", sans-serif;
+    background-color: #F2E3D5;
 }
 
 .logo {
@@ -20,7 +21,6 @@ html {
     height: 30vh;
     background-color: #024959;
     padding: 10px;
-    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -30,7 +30,7 @@ html {
 .titulo {
     color: #F2E3D5;
     font-size: 2.8rem;
-    margin: 10px;
+    margin: 10px;text-shadow: 5px 5px #000000;
 }
 
 .subtitulo {
@@ -42,7 +42,7 @@ html {
 .box-img {
     width: 100%;
     height: 60vh;
-    background-image: url(/imgs/pexels-cottonbro-7579831.jpg);
+    background-image: url(imgs/administracao-clinica-medica-600x400.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -54,12 +54,11 @@ html {
     color: #F2E3D5;
     padding: 15px;
     font-size: 1rem;
-    border: 2px solid #F2E3D5;
 }
 
 .historia {
     color: #F2E3D5;
-
+    text-align: justify;
 }
 
 h3 {
@@ -73,8 +72,10 @@ h3 {
     justify-content: space-around;
     align-items: center;
     height: 100px;
-    width: 100%;
+    width: 99.5%;
     font-size: 0.9rem;
+    border-radius: 10px;
+    margin:5px
 }
 
 a {
@@ -86,12 +87,38 @@ a {
 
 a:hover {
     letter-spacing: 1px;
-    color: darkblue;
 }
 
 footer {
-    text-align: center;
     font-weight: 600;
     background-color: #024959;
     color: #F2E3D5;
+    height:30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+footer a {
+    text-decoration: none;
+    color: #F2E3D5;
+    
+}
+p {
+    animation-duration: 6s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+ul li{
+    list-style-type: none;
 }
