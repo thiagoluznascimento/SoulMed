@@ -1,133 +1,138 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    font-family: "Montserrat", sans-serif;
-    background-color: #F2E3D5;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2e3d5;
 }
 
 .logo {
-    margin-left: 20px;
-    overflow: hidden;
-    font-size: 3rem;
+  margin-left: 20px;
+  overflow: hidden;
+  font-size: 3rem;
 }
 
 .cabecalho {
-    width: 100%;
-    height: 20vh;
-    background-color: #024959;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  height: 20vh;
+  background-color: #024959;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .titulo {
-    padding: 20px;
-    font-size: 2.5rem;
-    color: #f2e3d5;
-    margin-left: 5px;
-    text-shadow: 2px 2px #808080 ;
+  padding: 20px;
+  font-size: 2.5rem;
+  color: #f2e3d5;
+  margin-left: 5px;
 }
 
 .logo {
-    width: 200px;
-    position: relative;
-    bottom: 1px;
+  width: 240px;
+  position: relative;
+  bottom: 1px;
 }
 
 .nav-bar {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .nav-bar a {
-    text-decoration: none;
-    color: #f2e3d5;
-    font-size: 1rem;
+  text-decoration: none;
+  color: #f2e3d5;
+  font-size: 1.4rem;
 }
 
 .nav-bar a:hover {
-    letter-spacing: 1px;
-    color: #f2e3d5;
+  letter-spacing: 1px;
+  color: #f2e3d5;
 }
 .box-img {
-    width: 100%;
-    height: 60vh;
-    background-image: url(imgs/administracao-clinica-medica-600x400.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: center;
+  width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
 }
 
 .caixa-texto {
-    background-color: #F2E3D5;
-    width: auto;
-    color: #024959;
-    padding: 40px;
-    font-size: 1rem;
+  background-color: #f2e3d5;
+  width: auto;
+  color: #024959;
+  padding: 40px;
+  font-size: 1rem;
 }
 
 h3 {
-    text-align: center;
+  text-align: center;
 }
 
 .contato {
-    padding-top: 40px;
-    background-color: #024959;
-    color: #f2e3d5;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    font-size: 0.8rem;
+  background-color: #024959;
+  color: #f2e3d5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 0.9rem;
+  gap: 8px;
+  width: 100%;
+}
+.contato li {
+  list-style-type: none;
+}
+.redes {
+  text-align: center;
+  padding: 10px;
 }
 
 a {
-    text-decoration: none;
-    color: #f2e3d5;
-    margin: 5px;
-    font-size: 1rem;
+  text-decoration: none;
+  color: #023648;
+  margin: 5px;
+  font-size: 1rem;
 }
-
 footer {
-    padding: 20px;
-    text-align: center;
-    font-weight: 600;
-    background-color: #024959;
-    color: #f2e3d5;
-    height: 50px;
-    text-align: center;
+  background-color: #024959;
+  color: #f2e3d5;
+  text-align: center;
+  width: 100%;
 }
+@media (max-height: 480px) {
+  .cabecalho {
+    display: flex;
+    height: 40vh;
+  }
 
-footer a {
-    text-decoration: none;
-    color: #F2E3D5;
+  .logo {
+    display: none;
+  }
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
 }
-
-@media (max-width:480px){
-    
-    .cabecalho{
-        display: flex;
-        justify-content: space-between;
-    }
-    .titulo{
-        font-size: 0.8rem;
-        text-align: center;
-    }
-    .logo{
-       width:150px;
-    }
-    .footer{
-        display: flex;
-        align-items: center;
-    }
-    .nav-bar a{
-        font-size: 0.6rem;
-    }
+@media (max-width: 920px) {
+  .cabecalho {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+  }
+  .titulo {
+    display: none;
+  }
+  .logo {
+    width: 240px;
+  }
+  .nav-bar a {
+    font-size: 0.9rem;
+  }
 }
